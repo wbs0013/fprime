@@ -1,0 +1,5 @@
+Created log: /home/wbs0013/fprime/Ref/logs/2020_03_22-19_38_19/2020-03-22_19-38-25/event/Event.log
+User: wbs0013
+2020-03-22 19:38:37: 03/22-19:38:37: InvalidCommand (126) Severity.WARNING_HI : Invalid opcode 0x03E8 received.
+2020-03-22 19:38:47: 03/22-19:38:47: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x044C dispatched to port 22
+2020-03-22 19:38:47: 03/22-19:38:47: OpCodeError (124) Severity.WARNING_HI : Opcode 0x044C completed with error ERR_INVALID_OPCODE 

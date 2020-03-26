@@ -1,0 +1,6 @@
+Created log: /home/wbs0013/fprime/Ref/logs/2020_03_22-16_52_54/2020-03-22_16-52-59/event/Event.log
+User: wbs0013
+2020-03-22 16:53:09: 03/22-16:53:09: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x03E8 dispatched to port 20
+2020-03-22 16:53:09: 03/22-16:53:09: OpCodeCompleted (123) Severity.COMMAND : Opcode 0x03E8 completed
+2020-03-22 16:53:15: 03/22-16:53:15: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x0578 dispatched to port 20
+2020-03-22 16:53:15: 03/22-16:53:15: OpCodeError (124) Severity.WARNING_HI : Opcode 0x0578 completed with error ERR_INVALID_OPCODE 

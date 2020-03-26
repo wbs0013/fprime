@@ -1,0 +1,4 @@
+Created log: /home/wbs0013/fprime/Ref/logs/2020_03_22-22_22_28/2020-03-22_22-22-34/event/Event.log
+User: wbs0013
+2020-03-22 22:22:40: 03/22-22:22:40: InvalidCommand (126) Severity.WARNING_HI : Invalid opcode 0x03E8 received.
+2020-03-22 22:22:52: 03/22-22:22:52: InvalidCommand (126) Severity.WARNING_HI : Invalid opcode 0x03E8 received.

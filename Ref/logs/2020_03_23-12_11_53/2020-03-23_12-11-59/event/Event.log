@@ -1,0 +1,6 @@
+Created log: /home/wbs0013/fprime/Ref/logs/2020_03_23-12_11_53/2020-03-23_12-11-59/event/Event.log
+User: wbs0013
+2020-03-23 12:12:24: 03/23-12:12:24: InvalidCommand (126) Severity.WARNING_HI : Invalid opcode 0x07D0 received.
+2020-03-23 12:15:39: 03/23-12:15:39: InvalidCommand (126) Severity.WARNING_HI : Invalid opcode 0x07D0 received.
+2020-03-23 12:16:30: 03/23-12:16:30: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x0834 dispatched to port 22
+2020-03-23 12:16:30: 03/23-12:16:30: OpCodeError (124) Severity.WARNING_HI : Opcode 0x0834 completed with error ERR_INVALID_OPCODE 

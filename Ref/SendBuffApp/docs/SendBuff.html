@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SendBuff Component Dictionary</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+html {
+    font-family: Arial, sans-serif ;
+    font-size: 90% ;
+}
+</style>
+
+
+<h1><b>Commands</b></h1>
+
+
+
+<table>
+	<thead>
+		<tr style = "border-right: 2px solid black; border-left: 2px solid black; border-top: 2px solid black;">
+			<th rowspan = "2">Mnemonic</th>
+			<th rowspan = "2">ID</th>
+			<th rowspan = "2">Description</th>
+			<th rowspan = "1" colspan = "3">Arguments</th>
+		</tr>
+		<tr style = "border-right: 2px solid black; ">
+			<th>Argument</th>
+			<th>Type</th>
+			<th>Description</th>
+		<tr>
+	</thead>
+	<tbody>
+
+		<tr style = "border: 2px solid black;">
+			<td rowspan="1">SB_START_PKTS</td>
+			<td rowspan="1">['0']</td>
+			<td rowspan="1">Command to start sending packets</td>
+				<td></td>
+				<td></td>
+				<td></td>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="1">SB_INJECT_PKT_ERROR</td>
+			<td rowspan="1">['1']</td>
+			<td rowspan="1">Send a bad packet</td>
+				<td></td>
+				<td></td>
+				<td></td>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="4">SB_GEN_FATAL</td>
+			<td rowspan="4">['2']</td>
+			<td rowspan="4">Generate a FATAL EVR</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>arg1</td>
+						<td>U32</td>
+						<td>First FATAL Argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>arg2</td>
+						<td>U32</td>
+						<td>Second FATAL Argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>arg3</td>
+						<td>U32</td>
+						<td>Third FATAL Argument</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="7">SB_GEN_ASSERT</td>
+			<td rowspan="7">['3']</td>
+			<td rowspan="7">Generate an ASSERT</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>arg1</td>
+						<td>U32</td>
+						<td>First ASSERT Argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>arg2</td>
+						<td>U32</td>
+						<td>Second ASSERT Argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>arg3</td>
+						<td>U32</td>
+						<td>Third ASSERT Argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>arg4</td>
+						<td>U32</td>
+						<td>Fourth ASSERT Argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>arg5</td>
+						<td>U32</td>
+						<td>Fifth ASSERT Argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>arg6</td>
+						<td>U32</td>
+						<td>Sixth ASSERT Argument</td>
+					</tr>
+		</tr>
+	</tbody>
+</table>
+
+
+
+<h1><b>Telemetry</b></h1>
+<table>
+  <tr>
+     <th>Channel Name</th>
+     <th>ID</th>
+     <th>Type</th>
+     <th>Description</th>
+ </tr>
+
+ <tr>
+    <td>PacketsSent</td>
+    <td>['0']</td>
+    <td>U64</td>
+    <td>Number of packets sent</td>
+ </tr>
+ <tr>
+    <td>NumErrorsInjected</td>
+    <td>['1']</td>
+    <td>U32</td>
+    <td>Number of errors injected</td>
+ </tr>
+ <tr>
+    <td>Parameter3</td>
+    <td>['2']</td>
+    <td>U8</td>
+    <td>Readback of Parameter3</td>
+ </tr>
+ <tr>
+    <td>Parameter4</td>
+    <td>['3']</td>
+    <td>F32</td>
+    <td>Readback of Parameter4</td>
+ </tr>
+ <tr>
+    <td>SendState</td>
+    <td>['4']</td>
+    <td>ActiveState</td>
+    <td>Readback of Parameter4</td>
+ </tr>
+</table>
+
+<h1><b>Events</b></h1>
+
+
+
+
+<table>
+	<thead>
+		<tr style = "border-right: 2px solid black; border-left: 2px solid black; border-top: 2px solid black;">
+			<th rowspan = "2">Event Name</th>
+			<th rowspan = "2">ID</th>
+			<th rowspan = "2">Description</th>
+			<th rowspan = "1" colspan = "4">Arguments</th>
+		</tr>
+		<tr style = "border-right: 2px solid black; ">
+			<th>Argument</th>
+			<th>Type</th>
+			<th>Size</th>
+			<th>Description</th>
+		<tr>
+	</thead>
+	<tbody>
+
+		<tr style = "border: 2px solid black;">
+			<td rowspan="2">FirstPacketSent</td>
+			<td rowspan="2">['0']</td>
+			<td rowspan="2">First packet send</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;border-bottom: 2px solid black;">
+						<td>id</td>
+						<td>U32</td>
+						<td></td>
+						<td>The ID argument</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="2">PacketErrorInserted</td>
+			<td rowspan="2">['1']</td>
+			<td rowspan="2">Packet checksum error</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;border-bottom: 2px solid black;">
+						<td>id</td>
+						<td>U32</td>
+						<td></td>
+						<td>The ID argument</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="2">BuffSendParameterUpdated</td>
+			<td rowspan="2">['2']</td>
+			<td rowspan="2">Report parameter update</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;border-bottom: 2px solid black;">
+						<td>id</td>
+						<td>U32</td>
+						<td></td>
+						<td>The ID argument</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="4">SendBuffFatal</td>
+			<td rowspan="4">['3']</td>
+			<td rowspan="4">A test FATAL</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>arg1</td>
+						<td>U32</td>
+						<td></td>
+						<td>First FATAL argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>arg2</td>
+						<td>U32</td>
+						<td></td>
+						<td>Second FATAL argument</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>arg3</td>
+						<td>U32</td>
+						<td></td>
+						<td>Second FATAL argument</td>
+					</tr>
+		</tr>
+	</tbody>
+</table>
+
+
+
+</body>
+</html>

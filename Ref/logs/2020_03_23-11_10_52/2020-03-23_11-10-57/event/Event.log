@@ -1,0 +1,4 @@
+Created log: /home/wbs0013/fprime/Ref/logs/2020_03_23-11_10_52/2020-03-23_11-10-57/event/Event.log
+User: wbs0013
+2020-03-23 11:11:12: 03/23-11:11:12: InvalidCommand (126) Severity.WARNING_HI : Invalid opcode 0x07D0 received.
+2020-03-23 11:11:27: 03/23-11:11:27: InvalidCommand (126) Severity.WARNING_HI : Invalid opcode 0x07DA received.

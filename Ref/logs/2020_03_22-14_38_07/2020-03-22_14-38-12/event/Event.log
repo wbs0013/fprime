@@ -1,0 +1,19 @@
+Created log: /home/wbs0013/fprime/Ref/logs/2020_03_22-14_38_07/2020-03-22_14-38-12/event/Event.log
+User: wbs0013
+2020-03-22 14:38:18: 03/22-14:38:18: PrmFileLoadComplete (148) Severity.ACTIVITY_HI : Parameter file load completed. Read 4 records.
+2020-03-22 14:38:18: 03/22-14:38:18: NoConnectionToServer (381) Severity.WARNING_LO : Unable to connect to the socket server on port 50000
+2020-03-22 14:38:18: 03/22-14:38:18: ConnectedToServer (382) Severity.ACTIVITY_HI : Connection made to the socket server on port 50000
+2020-03-22 14:38:26: 03/22-14:38:26: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x03E8 dispatched to port 20
+2020-03-22 14:38:26: 03/22-14:38:26: OpCodeCompleted (123) Severity.COMMAND : Opcode 0x03E8 completed
+2020-03-22 14:38:36: 03/22-14:38:36: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x0578 dispatched to port 20
+2020-03-22 14:38:36: 03/22-14:38:36: OpCodeError (124) Severity.WARNING_HI : Opcode 0x0578 completed with error ERR_INVALID_OPCODE 
+2020-03-22 14:39:33: 03/22-14:39:33: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x03E8 dispatched to port 20
+2020-03-22 14:39:33: 03/22-14:39:33: OpCodeCompleted (123) Severity.COMMAND : Opcode 0x03E8 completed
+2020-03-22 14:39:51: 03/22-14:39:51: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x03E8 dispatched to port 20
+2020-03-22 14:39:51: 03/22-14:39:51: OpCodeCompleted (123) Severity.COMMAND : Opcode 0x03E8 completed
+2020-03-22 14:39:58: 03/22-14:39:58: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x03E8 dispatched to port 20
+2020-03-22 14:39:58: 03/22-14:39:58: OpCodeCompleted (123) Severity.COMMAND : Opcode 0x03E8 completed
+2020-03-22 14:40:11: 03/22-14:40:11: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x0578 dispatched to port 20
+2020-03-22 14:40:11: 03/22-14:40:11: OpCodeError (124) Severity.WARNING_HI : Opcode 0x0578 completed with error ERR_INVALID_OPCODE 
+2020-03-22 14:40:28: 03/22-14:40:28: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x0578 dispatched to port 20
+2020-03-22 14:40:28: 03/22-14:40:28: OpCodeError (124) Severity.WARNING_HI : Opcode 0x0578 completed with error ERR_INVALID_OPCODE 

@@ -1,0 +1,5 @@
+Created log: /home/wbs0013/fprime/Ref/logs/2020_03_25-12_57_02/2020-03-25_12-57-08/event/Event.log
+User: wbs0013
+2020-03-25 12:57:27: 03/25-12:57:27: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x07D0 dispatched to port 20
+2020-03-25 12:57:27: 03/25-12:57:27: OpCodeCompleted (123) Severity.COMMAND : Opcode 0x07D0 completed
+2020-03-25 12:57:45: 03/25-12:57:45: OpCodeDispatched (122) Severity.COMMAND : Opcode 0x0834 dispatched to port 22
