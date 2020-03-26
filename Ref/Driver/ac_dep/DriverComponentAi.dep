@@ -1,0 +1,8 @@
+$(BUILD_ROOT)/Ref/Driver/DriverComponentAc.cpp:\
+    $(BUILD_ROOT)/Ref/ManagerPorts/ManagerOpPortAi.xml  \
+    $(BUILD_ROOT)/Ref/ManagerPorts/ResultPortAi.xml  \
+    $(BUILD_ROOT)/Fw/Tlm/TlmPortAi.xml  \
+    $(BUILD_ROOT)/Fw/Time/TimePortAi.xml  \
+    $(BUILD_ROOT)/Fw/Log/LogPortAi.xml  \
+    $(BUILD_ROOT)/Fw/Log/LogTextPortAi.xml  
+

@@ -1,0 +1,8 @@
+$(BUILD_ROOT)/Ref/Scheduler/SchedulerComponentAc.cpp:\
+    $(BUILD_ROOT)/Ref/ManagerPorts/SchedulerPortAi.xml  \
+    $(BUILD_ROOT)/Fw/Cmd/CmdPortAi.xml  \
+    $(BUILD_ROOT)/Fw/Cmd/CmdResponsePortAi.xml  \
+    $(BUILD_ROOT)/Fw/Cmd/CmdRegPortAi.xml  \
+    $(BUILD_ROOT)/Fw/Tlm/TlmPortAi.xml  \
+    $(BUILD_ROOT)/Fw/Time/TimePortAi.xml  
+
