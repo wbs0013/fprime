@@ -15,6 +15,7 @@
 |---|---|---|---|
 |MGR_IS_ENABLED|0 (0x0)|bool|The first value|
 |MGR_MSG|1 (0x1)|F32|The second value|
+|MGR_MSG_BLCKD|2 (0x2)|bool|The second value|
 
 ## Event List
 

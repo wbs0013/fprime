@@ -610,6 +610,7 @@ namespace Ref {
     enum {
       CHANNELID_MGR_IS_ENABLED = 0, //!< Channel ID for MGR_IS_ENABLED
       CHANNELID_MGR_MSG = 1, //!< Channel ID for MGR_MSG
+      CHANNELID_MGR_MSG_BLCKD = 2, //!< Channel ID for MGR_MSG_BLCKD
     };
 
   PROTECTED:
@@ -630,6 +631,13 @@ namespace Ref {
     /* The second value */
     void tlmWrite_MGR_MSG(
         F32 arg /*!< The telemetry value*/
+    );
+
+    //! Write telemetry channel MGR_MSG_BLCKD
+    //!
+    /* The second value */
+    void tlmWrite_MGR_MSG_BLCKD(
+        bool arg /*!< The telemetry value*/
     );
 
   PROTECTED:

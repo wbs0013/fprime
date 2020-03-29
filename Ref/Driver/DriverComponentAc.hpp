@@ -369,7 +369,7 @@ namespace Ref {
     // ----------------------------------------------------------------------
 
     enum {
-      CHANNELID_DRV_MGR_MSG = 1, //!< Channel ID for DRV_MGR_MSG
+      CHANNELID_DRV_MSG = 1, //!< Channel ID for DRV_MSG
     };
 
   PROTECTED:
@@ -378,10 +378,10 @@ namespace Ref {
     // Telemetry write functions
     // ----------------------------------------------------------------------
 
-    //! Write telemetry channel DRV_MGR_MSG
+    //! Write telemetry channel DRV_MSG
     //!
     /* The second value */
-    void tlmWrite_DRV_MGR_MSG(
+    void tlmWrite_DRV_MSG(
         F32 arg /*!< The telemetry value*/
     );
 

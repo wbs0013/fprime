@@ -14,4 +14,5 @@
 |Channel Name|ID|Type|Description|
 |---|---|---|---|
 |SCHED_SENT|0 (0x0)|bool|The second value|
+|TIME_WAIT|1 (0x1)|F32|The second value|
 

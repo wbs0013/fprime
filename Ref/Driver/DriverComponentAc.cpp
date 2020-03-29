@@ -451,7 +451,7 @@ namespace Ref {
   // ----------------------------------------------------------------------
 
   void DriverComponentBase ::
-    tlmWrite_DRV_MGR_MSG(F32 arg)
+    tlmWrite_DRV_MSG(F32 arg)
   {
 
     if (this->m_Tlm_OutputPort[0].isConnected()) {
@@ -468,7 +468,7 @@ namespace Ref {
 
       FwChanIdType _id;
 
-      _id = this->getIdBase() + CHANNELID_DRV_MGR_MSG;
+      _id = this->getIdBase() + CHANNELID_DRV_MSG;
 
       this->m_Tlm_OutputPort[0].invoke(
           _id,

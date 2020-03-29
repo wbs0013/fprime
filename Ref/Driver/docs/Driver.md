@@ -6,7 +6,7 @@
 
 |Channel Name|ID|Type|Description|
 |---|---|---|---|
-|DRV_MGR_MSG|1 (0x1)|F32|The second value|
+|DRV_MSG|1 (0x1)|F32|The second value|
 
 ## Event List
 

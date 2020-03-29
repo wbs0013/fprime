@@ -397,6 +397,7 @@ namespace Ref {
 
     enum {
       CHANNELID_SCHED_SENT = 0, //!< Channel ID for SCHED_SENT
+      CHANNELID_TIME_WAIT = 1, //!< Channel ID for TIME_WAIT
     };
 
   PROTECTED:
@@ -410,6 +411,13 @@ namespace Ref {
     /* The second value */
     void tlmWrite_SCHED_SENT(
         bool arg /*!< The telemetry value*/
+    );
+
+    //! Write telemetry channel TIME_WAIT
+    //!
+    /* The second value */
+    void tlmWrite_TIME_WAIT(
+        F32 arg /*!< The telemetry value*/
     );
 
   PROTECTED:

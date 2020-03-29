@@ -1,5 +1,5 @@
 Output Ports: 1
 Commands: 1
  OpCodes: 0
-Channels: 1
- ChanIds: 0
+Channels: 2
+ ChanIds: 0,1

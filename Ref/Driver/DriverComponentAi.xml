@@ -12,7 +12,7 @@
     </ports>
     
     <telemetry>
-        <channel id="1" name="DRV_MGR_MSG" data_type="F32">
+        <channel id="1" name="DRV_MSG" data_type="F32">
             <comment>
             The second value
             </comment>

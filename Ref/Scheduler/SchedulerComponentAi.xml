@@ -24,6 +24,11 @@
             The second value
             </comment>
         </channel>
+	<channel id="1" name="TIME_WAIT" data_type="F32">
+            <comment>
+            The second value
+            </comment>
+        </channel>
         
     </telemetry>
 </component>

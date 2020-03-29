@@ -13,7 +13,9 @@
 
 #include <Ref/Scheduler/SchedulerComponentImpl.hpp>
 #include "Fw/Types/BasicTypes.hpp"
-
+#include <unistd.h>
+#include <iostream>
+#include <ctime>
 namespace Ref {
 
   // ----------------------------------------------------------------------
@@ -58,9 +60,11 @@ namespace Ref {
         const U32 cmdSeq,
         F32 time
     )
-  {
+  {	
+	this->tlmWrite_TIME_WAIT(time);
+	sleep(time);
 	float t = time;
-    this->tlmWrite_SCHED_SENT(t);
+    this->tlmWrite_SCHED_SENT(true);
     this->schedulerOut_out(0,time);
     this->cmdResponse_out(opCode,cmdSeq,Fw::COMMAND_OK);
   }

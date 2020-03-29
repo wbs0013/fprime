@@ -675,6 +675,35 @@ namespace Ref {
 
   }
 
+  void SchedulerComponentBase ::
+    tlmWrite_TIME_WAIT(F32 arg)
+  {
+
+    if (this->m_Tlm_OutputPort[0].isConnected()) {
+      Fw::Time _tlmTime;
+      if (this->m_Time_OutputPort[0].isConnected()) {
+         this->m_Time_OutputPort[0].invoke( _tlmTime);
+      }
+      Fw::TlmBuffer _tlmBuff;
+      Fw::SerializeStatus _stat = _tlmBuff.serialize(arg);
+      FW_ASSERT(
+          _stat == Fw::FW_SERIALIZE_OK,
+          static_cast<AssertArg>(_stat)
+      );
+
+      FwChanIdType _id;
+
+      _id = this->getIdBase() + CHANNELID_TIME_WAIT;
+
+      this->m_Tlm_OutputPort[0].invoke(
+          _id,
+          _tlmTime,
+          _tlmBuff
+      );
+    }
+
+  }
+
   // ----------------------------------------------------------------------
   // Time
   // ----------------------------------------------------------------------

@@ -60,7 +60,7 @@ namespace Ref {
   {
     float v1 = rand() % 100;
     this->managerOut_out(0,v1);
-    this->tlmWrite_DRV_MGR_MSG(v1);
+    this->tlmWrite_DRV_MSG(v1);
   }
 
 } // end namespace Ref

@@ -99,6 +99,12 @@ namespace Ref {
   {
     this->isEnabled = isEnabled;
     this->tlmWrite_MGR_IS_ENABLED(isEnabled);
+    if (isEnabled) {
+	this->tlmWrite_MGR_MSG_BLCKD(false);
+}
+    else {
+	this->tlmWrite_MGR_MSG_BLCKD(true);
+}
     this->cmdResponse_out(opCode,cmdSeq,Fw::COMMAND_OK);
   }
 
