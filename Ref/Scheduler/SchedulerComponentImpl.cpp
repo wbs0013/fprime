@@ -16,6 +16,7 @@
 #include <unistd.h>
 #include <iostream>
 #include <ctime>
+
 namespace Ref {
 
   // ----------------------------------------------------------------------
@@ -61,8 +62,12 @@ namespace Ref {
         F32 time
     )
   {	
-	this->tlmWrite_TIME_WAIT(time);
-	sleep(time);
+	
+	while (time != -1) {
+		this->tlmWrite_TIME_WAIT(time);		
+		sleep(1);
+		time = time - 1;
+	}
 	float t = time;
     this->tlmWrite_SCHED_SENT(true);
     this->schedulerOut_out(0,time);
