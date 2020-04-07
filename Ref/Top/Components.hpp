@@ -31,6 +31,7 @@ void exitTasks(void);
 #include <Ref/Manager/ManagerComponentImpl.hpp>
 #include <Ref/Driver/DriverComponentImpl.hpp>
 #include <Ref/Scheduler/SchedulerComponentImpl.hpp>
+#include <Ref/Temperature/TemperatureComponentImpl.hpp>
 
 
 extern Svc::RateGroupDriverImpl rateGroupDriverComp;
@@ -60,5 +61,6 @@ extern Ref::PingReceiverComponentImpl pingRcvr;
 extern Ref::ManagerComponentImpl manager;
 extern Ref::DriverComponentImpl driver;
 extern Ref::SchedulerComponentImpl scheduler;
+extern Ref::TemperatureComponentImpl temperature;
 
 #endif

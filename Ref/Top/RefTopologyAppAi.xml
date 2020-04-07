@@ -32,6 +32,8 @@
     <import_component_type>Ref/Manager/ManagerComponentAi.xml</import_component_type>
     <import_component_type>Ref/Driver/DriverComponentAi.xml</import_component_type>
     <import_component_type>Ref/Scheduler/SchedulerComponentAi.xml</import_component_type>
+    <import_component_type>Ref/Temperature/TemperatureComponentAi.xml</import_component_type>
+
 
    <instance namespace="Svc" name="fatalHandler" type="FatalHandler" base_id="1"  base_id_window="20" />
 
@@ -91,6 +93,7 @@
    <instance namespace="Ref" name="manager" type="Manager" base_id="2000"  base_id_window="20" />
 <instance namespace="Ref" name="scheduler" type="Scheduler" base_id="2100"  base_id_window="20" />
    <instance namespace="Ref" name="driver" type="Driver" base_id="2200"  base_id_window="20" />
+<instance namespace="Ref" name="temperature" type="Temperature" base_id="3000"  base_id_window="20" />
    
 
 
@@ -823,6 +826,10 @@
         <source component = "scheduler" port = "CmdReg" type = "CmdReg" num = "0"/>
         <target component = "cmdDisp" port = "compCmdReg" type = "CmdReg" num = "22"/>
    </connection>
+<connection name = "TemperatureReg">
+        <source component = "temperature" port = "CmdReg" type = "CmdReg" num = "0"/>
+        <target component = "cmdDisp" port = "compCmdReg" type = "CmdReg" num = "23"/>
+   </connection>
    <!-- Command Dispatch Ports - Dispatch port number must match registration port for each component -->
 <connection name = "ManagerDisp">
         <source component = "cmdDisp" port = "compCmdSend" type = "Cmd" num = "20"/>
@@ -832,6 +839,10 @@
 <connection name = "SchedulerDisp">
         <source component = "cmdDisp" port = "compCmdSend" type = "Cmd" num = "22"/>
         <target component = "scheduler" port = "CmdDisp" type = "Cmd" num = "0"/>
+   </connection>
+<connection name = "TemperatureDisp">
+        <source component = "cmdDisp" port = "compCmdSend" type = "Cmd" num = "23"/>
+        <target component = "temperature" port = "CmdDisp" type = "Cmd" num = "0"/>
    </connection>
 <!-- Command Reply Ports - Go to the same response port on the dispatcher -->
 
@@ -843,6 +854,10 @@
       <source component = "scheduler" port = "CmdStatus" type = "CmdResponse" num = "0"/>
       <target component = "cmdDisp" port = "compCmdStat" type = "CmdResponse" num = "0"/>
    </connection>
+<connection name = "TemperatureReply">
+      <source component = "temperature" port = "CmdStatus" type = "CmdResponse" num = "0"/>
+      <target component = "cmdDisp" port = "compCmdStat" type = "CmdResponse" num = "0"/>
+   </connection>
    <!-- Event Logger Binary Connections -->
 <connection name = "ManagerLog">
        <source component = "manager" port = "Log" type = "Log" num = "0"/>
@@ -852,6 +867,10 @@
        <source component = "driver" port = "Log" type = "Log" num = "0"/>
         <target component = "eventLogger" port = "LogRecv" type = "Log" num = "0"/>
    </connection>
+<connection name = "TemperatureLog">
+       <source component = "temperature" port = "Log" type = "Log" num = "0"/>
+        <target component = "eventLogger" port = "LogRecv" type = "Log" num = "0"/>
+   </connection>
    <!-- Event Logger Text Connections -->
 <connection name = "ManagerTextLog">
        <source component = "manager" port = "LogText" type = "LogText" num = "0"/>
@@ -859,6 +878,10 @@
    </connection>
 <connection name = "DriverTextLog">
        <source component = "driver" port = "LogText" type = "LogText" num = "0"/>
+        <target component = "textLogger" port = "TextLogger" type = "LogText" num = "0"/>
+   </connection>
+<connection name = "TemperatureTextLog">
+       <source component = "temperature" port = "LogText" type = "LogText" num = "0"/>
         <target component = "textLogger" port = "TextLogger" type = "LogText" num = "0"/>
    </connection>
    <!-- Telemetry Connections -->
@@ -872,6 +895,10 @@
    </connection>
 <connection name = "DriverTextTlm">
        <source component = "driver" port = "Tlm" type = "Tlm" num = "0"/>
+        <target component = "chanTlm" port = "TlmRecv" type = "Tlm" num = "0"/>
+   </connection>
+<connection name = "TemperatureTextTlm">
+       <source component = "temperature" port = "Tlm" type = "Tlm" num = "0"/>
         <target component = "chanTlm" port = "TlmRecv" type = "Tlm" num = "0"/>
    </connection>
    <!-- Parameter Connections -->
@@ -889,7 +916,10 @@
        <source component = "scheduler" port = "Time" type = "Time" num = "0"/>
         <target component = "linuxTime" port = "timeGetPort" type = "Time" num = "0"/>
    </connection>
-
+<connection name = "TemperatureTime">
+       <source component = "temperature" port = "Time" type = "Time" num = "0"/>
+        <target component = "linuxTime" port = "timeGetPort" type = "Time" num = "0"/>
+   </connection>
  <!-- Scheduler Connection -->
     
 <!-- Connection -->

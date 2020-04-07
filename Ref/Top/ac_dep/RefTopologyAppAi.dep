@@ -4,6 +4,7 @@ $(BUILD_ROOT)/Ref/Top/RefTopologyAppAc.cpp:\
     $(BUILD_ROOT)/Ref/SendBuffApp/SendBuffComponentAi.xml  \
     $(BUILD_ROOT)/Svc/CmdSequencer/CmdSequencerComponentAi.xml  \
     $(BUILD_ROOT)/Svc/BufferManager/BufferManagerComponentAi.xml  \
+    $(BUILD_ROOT)/Ref/Temperature/TemperatureComponentAi.xml  \
     $(BUILD_ROOT)/Svc/ActiveRateGroup/ActiveRateGroupComponentAi.xml  \
     $(BUILD_ROOT)/Svc/GndIf/GndIfComponentAi.xml  \
     $(BUILD_ROOT)/Svc/FileDownlink/FileDownlinkComponentAi.xml  \

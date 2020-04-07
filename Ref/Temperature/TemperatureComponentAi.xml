@@ -1,0 +1,69 @@
+<component name="Temperature" kind="active" namespace="Ref">
+    <commands>
+        <command kind="async" opcode="0" mnemonic="Temperature_Settings">
+            <args>
+                <arg name="temperature" type="F32">
+                </arg> 
+		<arg name="highBound" type="F32">
+		</arg>    
+		<arg name="lowBound" type="F32">
+		</arg>  
+		<arg name="change" type="ENUM">
+			<enum name="ChangeOfTemp">
+				<item name="Decrease"/>
+				<item name="Increase"/>
+			</enum>
+		</arg>   
+             </args>
+        </command>
+    </commands>
+    <telemetry>
+        <channel id="0" name="TEMP_SET" data_type="bool">
+        	</channel>
+        <channel id="1" name="CURRENT_TEMP" data_type="F32">
+        	</channel>
+        <channel id="2" name="TEMP_HI_THRESHOLD" data_type="F32">
+        	</channel>
+	<channel id="3" name="TEMP_LO_THRESHOLD" data_type="F32">
+		</channel>
+
+<channel id="4" name="FLAG1" data_type="bool">
+		</channel>
+<channel id="5" name="FLAG2" data_type="bool">
+		</channel>
+<channel id="6" name="FLAG3" data_type="bool">
+		</channel>
+<channel id="7" name="FLAG4" data_type="bool">
+		</channel>
+<channel id="8" name="FLAG5" data_type="bool">
+		</channel>
+<channel id="9" name="FLAG6" data_type="bool">
+		</channel>
+    </telemetry>
+    <events>
+        <event id="0" name="TEMP_NOMINAL" severity="ACTIVITY_LO" format_string="Temperature is nominal %b"  >
+            <args>
+                <arg name="tempNominal" type="bool">
+                    <comment>The val1 argument</comment>
+                </arg>          
+                          
+            </args>
+        </event>
+        <event id="1" name="TEMP_HIGH" severity="ACTIVITY_HI" format_string="Temperature is above threshold %b"  >
+            <args>
+                <arg name="tempHigh" type="bool">
+                    <comment>The val1 argument</comment>
+                </arg>          
+                          
+            </args>
+        </event>
+	<event id="2" name="TEMP_LOW" severity="ACTIVITY_HI" format_string="Temperature is below the threshold %b"  >
+            <args>
+                <arg name="tempLow" type="bool">
+                    <comment>The val1 argument</comment>
+                </arg>          
+                          
+            </args>
+        </event>
+    </events>
+</component>

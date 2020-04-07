@@ -96,7 +96,8 @@ REF_MODULES := \
 	Ref/Manager \
 	Ref/Driver \
 	Ref/Scheduler \
-	Ref/ManagerPorts 
+	Ref/ManagerPorts \
+	Ref/Temperature
 	
 	 
 

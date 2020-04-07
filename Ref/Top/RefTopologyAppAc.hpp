@@ -6,6 +6,7 @@
 #include <Ref/SendBuffApp/SendBuffComponentAc.hpp>
 #include <Svc/CmdSequencer/CmdSequencerComponentAc.hpp>
 #include <Svc/BufferManager/BufferManagerComponentAc.hpp>
+#include <Ref/Temperature/TemperatureComponentAc.hpp>
 #include <Svc/ActiveRateGroup/ActiveRateGroupComponentAc.hpp>
 #include <Svc/GndIf/GndIfComponentAc.hpp>
 #include <Svc/FileDownlink/FileDownlinkComponentAc.hpp>
@@ -64,6 +65,7 @@ extern Svc::PassiveTextLoggerImpl textLogger("textLogger");
 extern Ref::ManagerImpl manager("manager");
 extern Ref::SchedulerImpl scheduler("scheduler");
 extern Ref::DriverImpl driver("driver");
+extern Ref::TemperatureImpl temperature("temperature");
 
 
 

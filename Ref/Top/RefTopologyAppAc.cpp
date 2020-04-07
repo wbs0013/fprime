@@ -34,6 +34,7 @@ void setRefIds(void){
 	manager.setIdBase(2000);
 	scheduler.setIdBase(2100);
 	driver.setIdBase(2200);
+	temperature.setIdBase(3000);
 }
 
 
@@ -159,6 +160,8 @@ void constructRefArchitecture(void) {
     cmdDisp.set_compCmdSend_OutputPort(20, manager.get_CmdDisp_InputPort(0));
     //None
     cmdDisp.set_compCmdSend_OutputPort(22, scheduler.get_CmdDisp_InputPort(0));
+    //None
+    cmdDisp.set_compCmdSend_OutputPort(23, temperature.get_CmdDisp_InputPort(0));
     //None
     prmDb.set_pingOut_OutputPort(0, health.get_PingReturn_InputPort(6));
     //None
@@ -441,6 +444,18 @@ void constructRefArchitecture(void) {
     driver.set_Time_OutputPort(0, linuxTime.get_timeGetPort_InputPort(0));
     //None
     driver.set_managerOut_OutputPort(0, manager.get_managerIn_InputPort(0));
+    //None
+    temperature.set_CmdReg_OutputPort(0, cmdDisp.get_compCmdReg_InputPort(23));
+    //None
+    temperature.set_CmdStatus_OutputPort(0, cmdDisp.get_compCmdStat_InputPort(0));
+    //None
+    temperature.set_Log_OutputPort(0, eventLogger.get_LogRecv_InputPort(0));
+    //None
+    temperature.set_LogText_OutputPort(0, textLogger.get_TextLogger_InputPort(0));
+    //None
+    temperature.set_Tlm_OutputPort(0, chanTlm.get_TlmRecv_InputPort(0));
+    //None
+    temperature.set_Time_OutputPort(0, linuxTime.get_timeGetPort_InputPort(0));
 
 }
 

@@ -30,3 +30,4 @@ CmdSequencer,cmdSeq,541,23
 Manager,manager,2000,20
 Scheduler,scheduler,2100,20
 Driver,driver,2200,20
+Temperature,temperature,3000,20

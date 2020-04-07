@@ -30,7 +30,8 @@ fileDownlinkBufferManag |  401 (0x191)  |          20           |             20
         cmdSeq          |  541 (0x21d)  |          23           |            1459            |              23               |        23        
         manager         | 2000 (0x7d0)  |          20           |            100             |               4               |         4        
        scheduler        | 2100 (0x834)  |          20           |            100             |               2               |         2        
-        driver          | 2200 (0x898)  |          20           |            inf.            |               2               |         1        
+        driver          | 2200 (0x898)  |          20           |            800             |               2               |         1        
+      temperature       | 3000 (0xbb8)  |          20           |            inf.            |              10               |        10        
 -------------------------------------------------------------------------------------------------------------------------------------
 | INSTANCE NAME                 - Name of the instance object.                                                                      |
 | BASE ID (HEX)                 - Base ID set for the instance.                                                                     |

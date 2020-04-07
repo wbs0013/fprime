@@ -204,6 +204,12 @@ Ref::SchedulerComponentImpl scheduler
 #endif
 ;
 
+Ref::TemperatureComponentImpl temperature
+#if FW_OBJECT_NAMES == 1
+    ("temperature")
+#endif
+;
+
 #if FW_OBJECT_REGISTRATION == 1
 
 void dumparch(void) {
@@ -277,6 +283,7 @@ void constructApp(int port_number, char* hostname) {
     manager.init(10,0);
     driver.init(10);
     scheduler.init(10,0);
+	temperature.init(10,0);
     // Connect rate groups to rate group driver
     constructRefArchitecture();
 
@@ -298,6 +305,7 @@ void constructApp(int port_number, char* hostname) {
 	manager.regCommands();
 //	driver.regCommands();
 	scheduler.regCommands();
+	temperature.regCommands();
     // read parameters
     prmDb.readParamFile();
     recvBuffComp.loadParameters();
@@ -347,6 +355,7 @@ void constructApp(int port_number, char* hostname) {
     pingRcvr.start(0, 100, 10*1024);
     manager.start(0, 100, 10*1024);
     scheduler.start(0, 100, 10*1024);
+	temperature.start(0, 100, 10*1024);
     //driver.start(0, 100, 10*1024);
 
     // Initialize socket server
@@ -402,6 +411,7 @@ void exitTasks(void) {
     manager.exit();
    // driver.exit();
     scheduler.exit();
+	temperature.exit();
 
 }
 

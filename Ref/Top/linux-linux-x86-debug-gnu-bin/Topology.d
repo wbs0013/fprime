@@ -130,6 +130,8 @@
  /home/wbs0013/fprime/Ref/Driver/DriverComponentAc.hpp \
  /home/wbs0013/fprime/Ref/Scheduler/SchedulerComponentImpl.hpp \
  /home/wbs0013/fprime/Ref/Scheduler/SchedulerComponentAc.hpp \
+ /home/wbs0013/fprime/Ref/Temperature/TemperatureComponentImpl.hpp \
+ /home/wbs0013/fprime/Ref/Temperature/TemperatureComponentAc.hpp \
  /home/wbs0013/fprime/Os/Log.hpp \
  /home/wbs0013/fprime/Fw/Types/MallocAllocator.hpp
 
@@ -394,6 +396,10 @@
 /home/wbs0013/fprime/Ref/Scheduler/SchedulerComponentImpl.hpp:
 
 /home/wbs0013/fprime/Ref/Scheduler/SchedulerComponentAc.hpp:
+
+/home/wbs0013/fprime/Ref/Temperature/TemperatureComponentImpl.hpp:
+
+/home/wbs0013/fprime/Ref/Temperature/TemperatureComponentAc.hpp:
 
 /home/wbs0013/fprime/Os/Log.hpp:
 
